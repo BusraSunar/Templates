@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="https://colorlib.com/etc/lf/Login_v16/index.html" />
+    <title>Register Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="images/icons/favicon.ico" rel="icon" type="image/png" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/animate/animate.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/animsition/css/animsition.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="css/util.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <meta name="robots" content="noindex, follow" />
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('https://www.orissapost.com/wp-content/uploads/2020/04/economy-1.jpg');">
+            <div class="wrap-login100 p-t-30 p-b-50"><span class="login100-form-title p-b-41">Register Form</span>
+                <form class="login100-form validate-form p-b-33 p-t-5" style="background-color: #FFFAFA "><input name="__original_url" type="hidden"
+                        value="https://colorlib.com/etc/lf/Login_v16/index.html" />
+                    <div class="wrap-input100 validate-input" data-validate="Enter Name"><input class="input100" id="name"
+                            name="name" placeholder="Name" type="text" /></div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter Email"><input class="input100" id="email"
+                            name="email" placeholder="Email" type="email" /></div>
+
+                    <div class="container-login100-form-btn m-t-32"><a class="login100-form-btn" id="button" style="background: #1f87c1; color: #FFFAFA;" href = "http://127.0.0.1:5500/goPhish/success.html";>Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="dropDownSelect1">&nbsp;</div>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script src="js/main.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        $("#button").click(function(e){
+            e.preventDefault();//this will prevent the link trying to navigate to another page
+            var href = $(this).attr("href");//get the href so we can navigate later
+            console.log(document.getElementById("name").value);
+            console.log(document.getElementById("email").value);
+                
+            window.location = href;
+        });
+
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer=""
+        src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+        data-cf-beacon="{&#34;rayId&#34;:&#34;72e3c53e5aa79189&#34;,&#34;token&#34;:&#34;cd0b4b3a733644fc843ef0b185f98241&#34;,&#34;version&#34;:&#34;2022.6.0&#34;,&#34;si&#34;:100}"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
